@@ -1,20 +1,25 @@
-import { BeakerIcon, HomeIcon, CommandLineIcon, ChatBubbleLeftEllipsisIcon} from '@heroicons/react/24/solid'
-
-const Icon = ({name, icon}) => (
-    <div className="hover:text-red-500 hover:cursor-pointer flex ">
-        {icon}
-        {/* {name} */}
-    </div>
-
-)
 
 export default function Navbar(){
     return(
-        <div className=" w-[20vw] fixed bottom-6 left-1/2 translate-x-[-50%] flex flex-row justify-around items-center bg-gray-600 p-3 rounded-xl z-10">
-            <Icon name='Home' icon={<HomeIcon className="h-6 w-6 text-teal-300 mr-2 hover:text-teal-50"/>}/>
-            <Icon name='TechStack' icon={<CommandLineIcon className="h-6 w-6 text-teal-300 mr-2  hover:text-teal-50" />}/>
-            <Icon name='Projects' icon={<BeakerIcon className="h-6 w-6 text-teal-300 mr-2  hover:text-teal-50" />}/>
-            <Icon name='Contact Me' icon={<ChatBubbleLeftEllipsisIcon className="h-6 w-6 text-teal-300 mr-2  hover:text-teal-50" />}/>
+        <div className="w-screen h-12 bg-slate-950 text-white flex flex-row items-center justify-between p-8">
+            <h1 className='font-theme text-3xl text-header-primary'>AKSHUN</h1>
+            <div className="flex flex-row ">
+                <a className='mr-8' href="https://www.linkedin.com/in/akshun-kuthiala-194672223/" target='_blank'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a className='mr-8' href="https://github.com/Akshun-01" target='_blank'>           
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+            </div>
+            <div className="flex flex-row">
+                {['Home', 'About', 'Skills', 'Projects'].map(el=>{
+                    return <Link element={el} />;
+                })}
+            </div>
         </div>
     )
 }
+
+const Link = (props) => (
+    <p className='cursor-pointer relative mr-6 text-header-primary after:content-[""] after:h-[1.5px] after:w-0 after:absolute after:left-0 after:bottom-[-2px] after:rounded-full after:bg-header-primary after:duration-300 hover:after:w-full hover:text-white'>{props.element}</p>
+)

@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        theme: "Electroharmonix",
+      },
+      colors:{
+        'header-primary': "#C3AA13",
+      },
+    },
   },
   plugins: [],
 }

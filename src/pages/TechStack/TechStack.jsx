@@ -2,7 +2,9 @@ import "./TechStack.css";
 import VerticalText from "../../components/ui/VerticalText";
 import CARD_DATA from "./TechStackData";
 
-const Card = (props) => (
+const Card = (props) => {
+  console.log(props);
+  return(
   <div className="card">
     <div className="cardContent">
       <div className="cardImage">
@@ -19,7 +21,7 @@ const Card = (props) => (
       </div>
     </div>
   </div>
-);
+)};
 
 const TechStack = () => {
 
@@ -35,8 +37,8 @@ const TechStack = () => {
   };
 
   return (
-      <div className="outerContainer">
-        <VerticalText heading="Tech Stack"/>
+      <div className="outerContainer relative">
+        <VerticalText heading="Tech Stack" className="absolute"/>
         <div className="cards" onMouseMove={mouseHandler}>
           {CARD_DATA.map((data) => {
             return <Card data={data} key={data.heading} />;

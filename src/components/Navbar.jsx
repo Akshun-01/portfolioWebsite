@@ -1,8 +1,8 @@
 
 export default function Navbar(){
     return(
-        <div className="w-screen h-12 bg-slate-950 text-white flex flex-row items-center justify-between p-8">
-            <h1 className='font-theme text-3xl text-header-primary'>AKSHUN</h1>
+        <div className="fixed w-screen h-12 bg-neutral-700 text-white flex flex-row items-center justify-between p-8 z-10">
+            <h1 className='font-accent text-3xl text-header-primary'>AKSHUN</h1>
             <div className="flex flex-row ">
                 <a className='mr-8' href="https://www.linkedin.com/in/akshun-kuthiala-194672223/" target='_blank'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -16,6 +16,9 @@ export default function Navbar(){
                     return <Link element={el} />;
                 })}
             </div>
+            {/* <div className="mix-blend-multiply absolute left-0">
+                <img src="./assets/headerTexture.jpg" alt="" />
+            </div> */}
         </div>
     )
 }

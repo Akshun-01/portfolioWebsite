@@ -7,10 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        theme: "Electroharmonix",
+        theme: "Jost",
+        accent: "Electroharmonix",
       },
       colors:{
         'header-primary': "#C3AA13",
+        'background-color': "#141414"
       },
     },
   },

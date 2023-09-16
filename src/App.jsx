@@ -5,7 +5,8 @@ import { useMediaQuery } from "react-responsive";
 // import FloatingNav from './components/FloatingNav';
 import Navbar from './components/Navbar';
 import PhoneNav from './components/PhoneNav';
-import { HeroPage, TechStack, Projects } from './pages/index';
+import { HeroPage, TechStack, Projects, Footer } from './pages/index';
+import FooterNinja from './components/ui/FooterNinja';
 
 function App() {
   const isPhone = useMediaQuery({
@@ -13,12 +14,14 @@ function App() {
   });
 
   return (
-    <div className='bg-[#202125] h-screen'>
-      {/* {isPhone ? <PhoneNav/> : <Navbar/>} */}
+    <div className='bg-background-color'>
+      {isPhone ? <PhoneNav/> : <Navbar/>}
       <HeroPage />
-      {/* <Projects /> */}
-      {/* <TechStack /> */}
+      <Projects />
+      <TechStack />
+      <Footer />
       {/* <FloatingNav /> */}
+      <FooterNinja />
     </div>
   )
 }

@@ -44,6 +44,8 @@ const TechStack = () => {
             return <Card data={data} key={data.heading} />;
           })}
         </div>
+        {/* dividing line */}
+        <div className='w-4/5 h-[1px] absolute bottom-1 translate-x-[-50%] left-1/2 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
       </div>
   );
 }

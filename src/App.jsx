@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 // import FloatingNav from './components/FloatingNav';
 import Navbar from './components/Navbar';
 import PhoneNav from './components/PhoneNav';
-import { HeroPage, TechStack, Projects, Footer } from './pages/index';
+import { HeroPage, TechStack, Projects, Footer, ComingSoon } from './pages/index';
 import FooterNinja from './components/ui/FooterNinja';
 
 function App() {
@@ -15,13 +15,14 @@ function App() {
 
   return (
     <div className='bg-background-color'>
-      {isPhone ? <PhoneNav/> : <Navbar/>}
-      <HeroPage />
-      <Projects />
-      <TechStack />
-      <Footer />
+      {/* {isPhone ? <PhoneNav/> : <Navbar/>} */}
+      {/* <HeroPage /> */}
+      {/* <Projects /> */}
+      {/* <TechStack /> */}
+      {/* <Footer /> */}
       {/* <FloatingNav /> */}
       <FooterNinja />
+      <ComingSoon />
     </div>
   )
 }

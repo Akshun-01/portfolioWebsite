@@ -7,22 +7,22 @@ const CARD_DATA = [
   {
     image: "/techstack/sass-icon.png",
     heading: "Sass",
-    description: "SASS enhances CSS with features like variables and mixins, streamlining stylesheet development.",
+    description: "SASS is CSS with super powers and I love using it!",
   },
   {
     image: "/techstack/javascript-icon.png",
     heading: "JavaScript",
-    description: "I use JavaScript with different frame works and libraries to build websites.",
+    description: "JavaScript is the core of any good web application, still don't know when '===' will be used.",
   },
   {
     image: "/techstack/nodejs-icon.png",
     heading: "NodeJS",
-    description: "I use Node.js for server-side development, enabling efficient handling of concurrent connections.",
+    description: "I use Node.js for server-side development.",
   },
   {
     image: "/techstack/mongodb-icon.png",
     heading: "MongoDB",
-    description: "I use Mongodb to store structured or unstructured data for later use with mobile and websites.",
+    description: "Great way to store structured or unstructured data for later use with mobile and websites.",
   },
   {
     image: "/techstack/nextjs-icon.png",
@@ -37,7 +37,7 @@ const CARD_DATA = [
   {
     image: "/techstack/typescript-icon.png",
     heading: "TypeScript",
-    description: "I employ TypeScript for strong typing in JavaScript projects, improving code quality and maintainability.",
+    description: "TypeScript is really good for big projects, with typesafety and pain!",
   },
   {
     image: "/techstack/github-icon.png",

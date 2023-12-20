@@ -1,30 +1,62 @@
-import './App.css'
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
-import { useMediaQuery } from "react-responsive";
-
-// import FloatingNav from './components/FloatingNav';
 import Navbar from './components/Navbar';
-import PhoneNav from './components/PhoneNav';
-import { HeroPage, TechStack, Projects, Footer, ComingSoon } from './pages/index';
+import { HeroPage, TechStack, Projects, ContactForm, Footer, ComingSoon, Error} from './pages/index';
 import FooterNinja from './components/ui/FooterNinja';
+import Loading from './components/Loading';
 
 function App() {
-  const isPhone = useMediaQuery({
-    query: "(max-width: 780px)",
-  });
+  const location = useLocation();
+  console.log(location.pathname);
 
   return (
     <div className='bg-background-color'>
-      {/* {isPhone ? <PhoneNav/> : <Navbar/>} */}
-      {/* <HeroPage /> */}
-      {/* <Projects /> */}
-      {/* <TechStack /> */}
-      {/* <Footer /> */}
-      {/* <FloatingNav /> */}
+      {/* <ComingSoon /> */}
+      <Navbar />
+      <AnimatePresence>
+      <Routes location={location} key={location.pathname}>
+        <Route
+          path="/portfolioWebsite/"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <HeroPage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/portfolioWebsite/techstack"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <TechStack />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/portfolioWebsite/projects"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <Projects />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/portfolioWebsite/contact"
+          element={
+            <React.Suspense fallback={<Loading />}>
+              <ContactForm />
+            </React.Suspense>
+          }
+        />
+        <Route path="/portfolioWebsite/*" element={<Error/>} />
+      </Routes>
+      </AnimatePresence>
+      {location.pathname=="/portfolioWebsite/" ? <p/> : <Footer />}
       <FooterNinja />
-      <ComingSoon />
+      {/* <FloatingNav /> */}
     </div>
   )
-}
+} 
 
 export default App

@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        theme: "Jost",
         accent: "Electroharmonix",
       },
       colors:{
@@ -16,12 +15,12 @@ export default {
       },
       keyframes: {
         walk: {
-          '0%': { transform: 'translate(-2vw)' },
-          '100%': { transform: 'translate(102vw)' },
+          '0%': { transform: 'translate(-2vw)', 'opacity':1 },
+          '100%': { transform: 'translate(102vw)', 'opacity':0.3 },
         },
       },
       animation: {
-        'walking-ninja': 'walk 50s linear infinite',
+        'walking-ninja': 'walk 20s linear infinite',
       },
     },
   },

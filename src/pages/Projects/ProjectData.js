@@ -20,7 +20,7 @@ const PROJECT_DATA = [
     {
       image : "/projects/dummy.png",
       links : {github:"https://github.com/pixonoids/Hillfair-2k23", website: "https://www.hillffairnith.com/"},
-      tags : ["React", "Frontend animations", "UI/UX", "Day/Night mode" ],
+      tags : ["React", "Frontend animations", "UI/UX", ],
       title : "Hillffiar-2k23"
     },
   ]

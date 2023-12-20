@@ -1,30 +1,12 @@
+import { useMediaQuery } from "react-responsive";
+import { stagger, motion } from "framer-motion";
+
 import "./TechStack.css";
+
 import VerticalText from "../../components/ui/VerticalText";
 import CARD_DATA from "./TechStackData";
 
-const Card = (props) => {
-  console.log(props);
-  return(
-  <div className="card">
-    <div className="cardContent">
-      <div className="cardImage">
-        <img src={props.data.image} alt={props.data.heading} className="scale-50"/>
-      </div>
-      <div className="cardInfoWrapper">
-        <div className="cardInfo">
-          <i className={props.data.image}></i>
-          <div className="cardInfoTitle">
-            <h3>{props.data.heading}</h3>
-            <h4>{props.data.description}</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-)};
-
 const TechStack = () => {
-
   const mouseHandler = (e) => {
     for (const card of document.getElementsByClassName("card")) {
       const rect = card.getBoundingClientRect(),
@@ -36,18 +18,53 @@ const TechStack = () => {
     }
   };
 
+  const isPhone = useMediaQuery({
+    query: "(min-width: 1260px)",
+  });
+
   return (
       <div className="outerContainer relative">
-        <VerticalText heading="Tech Stack" className="absolute"/>
+        {isPhone ? 
+        <VerticalText heading="Tech Stack" className="absolute hidden"/> : (
+            <div className="">
+              <h1 className="text-2xl sm:text-4xl absolute top-24 left-1/2 translate-x-[-50%] tracking-widest opacity-70">Tech Stack</h1>
+            </div>
+        )
+        }
+        <div className="hidden xl:block absolute top-8 right-12">
+          <img src="./assets/lantern.png" alt="" className="h-72"/>
+        </div>
         <div className="cards" onMouseMove={mouseHandler}>
-          {CARD_DATA.map((data) => {
-            return <Card data={data} key={data.heading} />;
+          {CARD_DATA.map((data,i) => {
+            return <Card data={data} key={data.heading} num={i}/>;
           })}
         </div>
         {/* dividing line */}
-        <div className='w-4/5 h-[1px] absolute bottom-1 translate-x-[-50%] left-1/2 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
+        <div className='w-4/5 h-[1px] absolute bottom-5 translate-x-[-50%] left-1/2 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
       </div>
   );
 }
+
+const Card = (props) => (
+  <motion.div className="card"
+            initial={{opacity:0, translateY:-200}}
+            animate={{opacity:1, translateY:0}}
+            transition={{duration:1.5, delay: 0.1*props.num}}>
+    <div className="cardContent">
+      <div className="cardImage">
+        <img src={props.data.image} alt={props.data.heading} className="scale-50"/>
+      </div>
+      <div className="cardInfoWrapper">
+        <div className="cardInfo">
+          <i className={props.data.image}></i>
+          <div className="cardInfoTitle">
+            {/* <h3>{props.data.heading}</h3> */}
+            <h4>{props.data.description}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </motion.div>
+);
 
 export default TechStack;

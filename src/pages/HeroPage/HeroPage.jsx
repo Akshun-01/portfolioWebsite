@@ -1,4 +1,4 @@
-import './HeroPage.scss';
+// import './HeroPage.scss';
 
 export default function HeroPage(){
     return(
@@ -12,13 +12,11 @@ export default function HeroPage(){
                 </div>
             </div>
             <div className="z-[2]">
-                <img src="./assets/homeImg.png" alt="img" className='opacity-20'/>
+                <img src="/assets/homeImg.png" alt="img" className='opacity-20'/>
             </div>
-            {/* <div className="z-[1] bg-inherit mix-blend-overlay h-[50px]">
-                <img src="./assets/paperTexture.jpg" alt="" className='absolute top-0 right-0'/>
-            </div> */}
-            {/* dividing line */}
-            <div className='w-4/5 h-[1px] absolute bottom-6 translate-x-[-50%] left-1/2 bg-gradient-to-r from-transparent via-blue-400 opacity-60' /> 
+            <div className="z-[1] bg-inherit mix-blend-overlay h-[50px]">
+                <img src="/assets/paperTexture.jpg" alt="" className='absolute top-0 left-0 mix-blend-multiply h-screen w-screen' />
+            </div>
         </div>
     )
 }

@@ -5,13 +5,13 @@
   
   .outerContainer {
     align-items: center;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    background: url('./assets/expertisebg.png') ;
+    background-size: contain;
     display: flex;
-    /* height: 100vh; */
     justify-content: center;
-    margin: 0px;
-    /* overflow: hidden; */
-    padding: 2rem 0;
+    padding: 4rem 0;
+    padding-top: 10em;
     }
     
     .cards {
@@ -100,9 +100,9 @@
     .cardImage {
     align-items: center;
     display: flex;
-    height: 140px;
+    height: 200px;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     }
     
     .cardImage > i {
@@ -129,15 +129,15 @@
     height: 20px;
     line-height: 20px;
     }
-    
+   
     .cardInfoTitle > h3 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     line-height: 20px;
     }
     
     .cardInfoTitle > h4 {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.85em;
+    font-size: 1em;
     margin-top: 8px;
     }
     
@@ -153,6 +153,10 @@
       max-width: 1000px;
       padding: 10px 0px;
     }
+
+    .cardImage{
+      scale: 0.7;
+    }
     
     .card {
       flex-shrink: 1;
@@ -166,7 +170,7 @@
     }
     
     .cardImage {
-      height: 80px;  
+      scale: 0.6; 
     }
     
     .cardImage > i {

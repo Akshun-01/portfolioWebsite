@@ -11,7 +11,7 @@ export default {
       },
       colors:{
         'header-primary': "#C3AA13",
-        'background-color': "#141414"
+        'background-color': "#141414"  // 01001b
       },
       keyframes: {
         walk: {

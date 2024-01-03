@@ -1,0 +1,89 @@
+.images{
+    .grid{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .left{
+        
+        .left-bg{
+            position: absolute;
+            left: 0;
+        }
+        .fish1{
+            position: absolute;
+            left: 0;
+        }
+        .fish2{
+            position: absolute;
+            left: 0;
+        }
+
+        @media(max-width:640px) {
+            opacity: 80%;
+            .left-bg{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                rotate: 270deg;
+                bottom: 3rem;
+                scale: 0.9 1.4;
+            }
+            .fish1{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .fish2{
+                position: absolute;
+                right: 1rem;
+                bottom: 0;
+            }
+        }
+    }
+
+    .right{
+        
+        .right-bg{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .right-bg2{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .clouds{
+            position: absolute;
+            right: 0;
+        }
+        .tree{
+            position: absolute;
+            right: 0;
+        }
+
+        @media(max-width:640px) {
+            opacity: 60%;
+            .right-bg{
+                display: none;
+            }
+            .right-bg2{
+                display: none;
+            }
+            .clouds{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .tree{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}

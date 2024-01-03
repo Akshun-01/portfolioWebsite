@@ -53,7 +53,7 @@ function App() {
       </Routes>
       </AnimatePresence>
       {location.pathname=="/portfolioWebsite/" ? <p/> : <Footer />}
-      <FooterNinja />
+      {/* <FooterNinja /> */}
       {/* <FloatingNav /> */}
     </div>
   )

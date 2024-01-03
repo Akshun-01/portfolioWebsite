@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Electroharmonix, Jost;
-    src: url("fonts/Electroharmonix.otf") format("opentype");
-    src: url("fonts/Jost.otf") format("opentype");
+    font-family: Electroharmonix;
+    src: url("/fonts/electroharmonix.otf") format("opentype");
   }

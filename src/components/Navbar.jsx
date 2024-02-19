@@ -64,7 +64,7 @@ const Dropdown = ()=>{
         exit="exit"
     >
         <div className="w-full text-center relative">
-            <motion.a href="/portfolioWebsite/" className='text-3xl sm:text-6xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
+            <motion.a href="/portfolioWebsite/" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
               initial={{y:80,opacity:0}}
               animate={{y:0, opacity:1}}
               transition={{delay:.8}}
@@ -92,10 +92,10 @@ const Dropdown = ()=>{
                  delay:1
                }
             }}
-            ><img src="./navbar/homeGate.png" alt="" className='h-[12vh] sm:h-[20vh] aspect-auto'/></motion.div>
+            ><img src="./navbar/homeGate.png" alt="" className='h-[12vh] sm:h-[18vh] aspect-auto'/></motion.div>
         </div>
         <div className="w-full text-center relative">
-            <motion.a href="/portfolioWebsite/techstack" className='text-3xl sm:text-6xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
+            <motion.a href="/portfolioWebsite/techstack" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
               initial={{y:80,opacity:0}}
               animate={{y:0, opacity:1}}
               transition={{delay:.6}}
@@ -107,7 +107,7 @@ const Dropdown = ()=>{
                    delay:0.7
                  }
               }}
-            >Expertise</motion.a>
+            >Stack</motion.a>
             {/* dividing line */}
             <div className='h-[1px] w-[100%] absolute left-0 translate-y-6 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
             {/* element */}
@@ -126,7 +126,7 @@ const Dropdown = ()=>{
             ><img src="./navbar/lanternjp.png" alt="" className='h-[12vh] sm:h-[20vh] aspect-auto'/></motion.div>
         </div>
         <div className="w-full text-center relative">
-            <motion.a href="/portfolioWebsite/projects" className='text-3xl sm:text-6xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
+            <motion.a href="/portfolioWebsite/projects" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
             initial={{y:100,opacity:0}}
             animate={{y:0, opacity:1}}
             transition={{delay:.4}}
@@ -157,7 +157,7 @@ const Dropdown = ()=>{
             ><img src="./navbar/amulet.png" alt="" className='h-[12vh] sm:h-[20vh] aspect-auto'/></motion.div>
         </div>
         <div className="w-full text-center relative">
-            <motion.a href="/portfolioWebsite/contact" className='text-3xl sm:text-6xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
+            <motion.a href="/portfolioWebsite/contact" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
             initial={{y:80,opacity:0}}
             animate={{y:0, opacity:1}}
             transition={{delay:.2}}
@@ -185,7 +185,7 @@ const Dropdown = ()=>{
                  delay:.1
                }
             }}
-            ><img src="./navbar/daruma.png" alt="" className='h-[12vh] sm:h-[20vh] aspect-auto'/></motion.div>
+            ><img src="./navbar/daruma.png" alt="" className='h-[12vh] sm:h-[16vh] aspect-auto'/></motion.div>
         </div>
     </motion.div>
 )}

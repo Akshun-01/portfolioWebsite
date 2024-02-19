@@ -4,8 +4,9 @@ import { AnimatePresence } from "framer-motion";
 
 import Navbar from './components/Navbar';
 import { HeroPage, TechStack, Projects, ContactForm, Footer, ComingSoon, Error} from './pages/index';
-import FooterNinja from './components/ui/FooterNinja';
 import Loading from './components/Loading';
+import FooterNinja from './components/ui/FooterNinja';
+import FloatingNav from "./components/FloatingNav";
 
 function App() {
   const location = useLocation();

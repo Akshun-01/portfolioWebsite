@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-100 text-center text-neutral-600 dark:bg-background-color dark:text-neutral-200 lg:text-left">
+    <footer className="bg-neutral-100 text-center text-neutral-600 dark:bg-background-color dark:text-neutral-200 lg:text-left z-20 overflow-hidden absolute w-full">
       
       <div className="mx-6 py-10 text-center md:text-left">
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -71,7 +71,7 @@ const Footer = () => {
               </svg>
               akshunkuthiala2002@gmail.com
             </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
+            {/* <p className="mb-4 flex items-center justify-center md:justify-start">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -85,7 +85,7 @@ const Footer = () => {
                 />
               </svg>
               +91 88943 43352
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

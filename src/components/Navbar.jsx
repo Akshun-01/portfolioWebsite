@@ -142,7 +142,7 @@ const Dropdown = ()=>{
             {/* dividing line */}
             <div className='h-[1px] w-[100%] absolute left-0 translate-y-6 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
             {/* element */}
-            <motion.div className='absolute right-3/4 -top-9'
+            <motion.div className='absolute right-[80%] md:right-3/4 -top-9'
             initial={{x:-100,opacity:0}}
             animate={{x:0, opacity:1}}
             transition={{delay:.8}}

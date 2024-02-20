@@ -13,7 +13,7 @@ const Projects = () => {
       {isPhone ? 
         <VerticalText heading="Projects" className="absolute hidden"/> : (
         <div className="">
-          <h1 className="absolute text-4xl top-28 sm:top-24 lg:text-5xl lg:top-24 left-1/2 translate-x-[-50%] font-accent tracking-widest opacity-70 ">Project</h1>
+          <h1 className="absolute text-4xl top-28 sm:top-24 md:text-5xl lg:top-24 left-1/2 translate-x-[-50%] font-accent tracking-widest opacity-70 ">Project</h1>
         </div>
         )
       }
@@ -33,7 +33,7 @@ const Projects = () => {
 
 const ProjectCard = (props) => {
   return (
-    <div className='sm:mx-6 sm:mb-12 mb-[-50px] sm:scale-100 scale-75'>
+    <div className='sm:mx-6 sm:mb-12 mb-[-40px] sm:scale-100 scale-75'>
       <div className="overflow-hidden relative cursor-pointer border-[1px] border-neutral-400 rounded-md">
         <img src={props.data.image} alt={props.data.title} className="w-full h-full" />
         <div className="">
@@ -52,7 +52,7 @@ const ProjectCard = (props) => {
          })}
       </div>
 
-      <h1 className='font-light tracking-wide text-4xl font-mono mt-3'>{props.data.title}</h1>
+      <h1 className='font-light tracking-wide text-2xl md:text-5xl font-mono mt-4'>{props.data.title}</h1>
     </div>
 )};
 

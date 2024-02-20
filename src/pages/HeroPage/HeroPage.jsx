@@ -6,12 +6,16 @@ import VerticalText from '../../components/ui/VerticalText';
 
 export default function HeroPage(){
     return(
-        <div className="flex items-center justify-center text-white relative h-screen">
+        <div className="flex items-center justify-center text-white relative h-screen w-screen overflow-x-hidden">
             <div className="text-left z-20 lg:translate-x-[-10vw]">
                 <h1 className="text-2xl font-bold opacity-60 ml-2">I'm a</h1>
                 <p className="text-5xl md:text-7xl lg:text-8xl font-accent">DEVELOPER</p>
                 <div className="my-10">
-                    <button className="p-3 mr-5 border-red-800 border-solid border-2 rounded-md">Download Resume ⬇️</button>
+                    <button className="p-3 mr-5 border-red-800 border-solid border-2 rounded-md">
+                        <a href="./resume/resume.pdf" download>
+                            Download Resume ⬇️
+                        </a>
+                    </button>
                 </div>
                 {/* <VerticalText heading="DEVELOPER" className="absolute left-1/2"/> */}
             </div>
@@ -29,6 +33,7 @@ export default function HeroPage(){
                     <img className="right-bg" src="/homepage/right_bg.webp" alt="" />
                     <img className="clouds" src="/homepage/right_clouds.webp" alt="" />
                     <img className="tree" src="/homepage/right_tree.webp" alt="" />
+                    <img className='mb-btm-pattern' src="/homepage/left_bg.webp" alt="" />
                 </div>
             </div>
         </div>

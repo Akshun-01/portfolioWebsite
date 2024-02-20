@@ -8,7 +8,7 @@ const PROJECT_DATA = [
     {
       image : "/projects/flipkartgeni.png",
       links : {github:"https://github.com/AkhilJ321/flipkart-genai", website: "website2.com"},
-      tags : ["Nextjs", "OpenAI API", "Puppetter : Web Scraping"],
+      tags : ["Nextjs", "Puppetter", "OpenAI API"],
       title : "GenAI Flipkart"
     },
     {

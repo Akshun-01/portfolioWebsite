@@ -28,10 +28,11 @@ const TechStack = () => {
           <VerticalText heading="Tech Stack" className="absolute hidden"/> 
           ) : (
           <div className="">
-            <h1 className="absolute text-2xl top-28 lg:text-5xl lg:top-24 left-1/2 translate-x-[-50%] font-accent tracking-widest opacity-70 ">Tech Stack</h1>
+            <h1 className="absolute text-2xl sm:text-4xl lg:text-5xl top-28 lg:top-24 left-1/2 translate-x-[-50%] font-accent tracking-widest opacity-70 ">Tech Stack</h1>
           </div>
         )}
-        <div className="hidden xl:block absolute top-8 right-12">
+        {/* lantern */}
+        <div className="hidden xl:block fixed top-8 right-12">
           <img src="./assets/lantern.png" alt="" className="h-72"/>
         </div>
         <div className="cards" onMouseMove={mouseHandler}>

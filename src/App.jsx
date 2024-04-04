@@ -19,7 +19,7 @@ function App() {
       <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route
-          path="/portfolioWebsite/"
+          path="/"
           element={
             <React.Suspense fallback={<Loading />}>
               <HeroPage />
@@ -27,7 +27,7 @@ function App() {
           }
         />
         <Route
-          path="/portfolioWebsite/techstack"
+          path="/techstack"
           element={
             <React.Suspense fallback={<Loading />}>
               <TechStack />
@@ -35,7 +35,7 @@ function App() {
           }
         />
         <Route
-          path="/portfolioWebsite/projects"
+          path="/projects"
           element={
             <React.Suspense fallback={<Loading />}>
               <Projects />
@@ -43,17 +43,17 @@ function App() {
           }
         />
         <Route
-          path="/portfolioWebsite/contact"
+          path="/contact"
           element={
             <React.Suspense fallback={<Loading />}>
               <ContactForm />
             </React.Suspense>
           }
         />
-        <Route path="/portfolioWebsite/*" element={<Error/>} />
+        <Route path="/*" element={<Error/>} />
       </Routes>
       </AnimatePresence>
-      {location.pathname=="/portfolioWebsite/" ? <p/> : <Footer />}
+      {location.pathname=="/" ? <p/> : <Footer />}
       {/* <FooterNinja /> */}
       {/* <FloatingNav /> */}
     </div>

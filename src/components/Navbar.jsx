@@ -19,7 +19,9 @@ export default function Navbar(){
 
     return(
         <div className="z-30 fixed w-full h-12 bg-neutral-700 text-white flex flex-row items-center justify-between px-6 py-9">
-            <h1 className='font-accent text-header-primary lg:text-3xl text-2xl '>AKSHUN</h1>
+            <a href='/portfolioWebsite/'>
+              <h1 className='font-accent text-header-primary lg:text-3xl text-2xl cursor-pointer '>AKSHUN</h1>
+            </a>
             <div className="flex flex-row opacity-0 sm:opacity-100">
                 <a className='mr-6' href="https://www.linkedin.com/in/akshun-kuthiala-194672223/" target='_blank'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin hover:fill-header-primary hover:stroke-none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>

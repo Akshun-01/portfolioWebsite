@@ -18,22 +18,22 @@ const Footer = () => {
               Navigation
             </h6>
             <p className="mb-4">
-              <a href="/portfolioWebsite/" className="text-neutral-600 dark:text-neutral-200 hover:text-header-primary">
+              <a href="/" className="text-neutral-600 dark:text-neutral-200 hover:text-header-primary">
                 Home
               </a>
             </p>
             <p className="mb-4">
-              <a href="/portfolioWebsite/techstack" className="text-neutral-600 dark:text-neutral-200 hover:text-header-primary">
+              <a href="/techstack" className="text-neutral-600 dark:text-neutral-200 hover:text-header-primary">
                 TechStack
               </a>
             </p>
             <p className="mb-4">
-              <a href="/portfolioWebsite/projects" className="text-neutral-600 dark:text-neutral-200 hover:text-header-primary">
+              <a href="/projects" className="text-neutral-600 dark:text-neutral-200 hover:text-header-primary">
                 Projects
               </a>
             </p>
             <p className="mb-4">
-              <a href="/portfolioWebsite/contact" className="text-neutral-600 dark:text-neutral-200 hover:text-header-primary">
+              <a href="/contact" className="text-neutral-600 dark:text-neutral-200 hover:text-header-primary">
                 Contact Me
               </a>
             </p>

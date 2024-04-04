@@ -19,7 +19,7 @@ export default function Navbar(){
 
     return(
         <div className="z-30 fixed w-full h-12 bg-neutral-700 text-white flex flex-row items-center justify-between px-6 py-9">
-            <a href='/portfolioWebsite/'>
+            <a href='/'>
               <h1 className='font-accent text-header-primary lg:text-3xl text-2xl cursor-pointer '>AKSHUN</h1>
             </a>
             <div className="flex flex-row opacity-0 sm:opacity-100">
@@ -66,7 +66,7 @@ const Dropdown = ()=>{
         exit="exit"
     >
         <div className="w-full text-center relative">
-            <motion.a href="/portfolioWebsite/" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
+            <motion.a href="/" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
               initial={{y:80,opacity:0}}
               animate={{y:0, opacity:1}}
               transition={{delay:.8}}
@@ -97,7 +97,7 @@ const Dropdown = ()=>{
             ><img src="./navbar/homeGate.png" alt="" className='h-[12vh] sm:h-[18vh] aspect-auto'/></motion.div>
         </div>
         <div className="w-full text-center relative">
-            <motion.a href="/portfolioWebsite/techstack" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
+            <motion.a href="/techstack" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
               initial={{y:80,opacity:0}}
               animate={{y:0, opacity:1}}
               transition={{delay:.6}}
@@ -128,7 +128,7 @@ const Dropdown = ()=>{
             ><img src="./navbar/lanternjp.png" alt="" className='h-[12vh] sm:h-[20vh] aspect-auto'/></motion.div>
         </div>
         <div className="w-full text-center relative">
-            <motion.a href="/portfolioWebsite/projects" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
+            <motion.a href="/projects" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
             initial={{y:100,opacity:0}}
             animate={{y:0, opacity:1}}
             transition={{delay:.4}}
@@ -159,7 +159,7 @@ const Dropdown = ()=>{
             ><img src="./navbar/amulet.png" alt="" className='h-[12vh] sm:h-[20vh] aspect-auto'/></motion.div>
         </div>
         <div className="w-full text-center relative">
-            <motion.a href="/portfolioWebsite/contact" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
+            <motion.a href="/contact" className='text-3xl sm:text-5xl cursor-pointer relative mr-6 mb-12 text-stone-500  hover:text-header-primary'
             initial={{y:80,opacity:0}}
             animate={{y:0, opacity:1}}
             transition={{delay:.2}}

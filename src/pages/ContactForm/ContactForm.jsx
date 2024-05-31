@@ -29,7 +29,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-[url('./assets/contactbg.png')] bg-no-repeat bg-cover text-white flex items-center justify-center relative py-12">
+    <div>
+      <div>
+        <img className="w-screen h-screen z-0 absolute" src="./assets/contactbg.png" alt="" />
+      </div>
+      <div className='z-10 text-white flex items-center justify-center relative py-12'>
         {isPhone ? 
           <VerticalText heading="Contact Me" className="absolute hidden"/> : (
           <div className="">
@@ -52,7 +56,7 @@ const ContactForm = () => {
                   </div>
                   <div className="sm:col-span-2">
                       <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                      <textarea id="message" rows="6" name="message" className="shadow-sm text-sm rounded-lg block w-full p-2.5 dark:bg-zinc-700 dark:border-gray-600 dark:placeholder-zinc-400 dark:text-white dark:shadow-sm-light" placeholder="Leave a comment..."></textarea>
+                      <textarea id="message" rows="6" name="message" className="shadow-sm text-sm rounded-lg block w-full p-2.5 dark:bg-zinc-700 dark:border-gray-600 dark:placeholder-zinc-400 dark:text-white dark:shadow-sm-light" placeholder="Leave a comment..." maxlength="2000"></textarea>
                   </div>
                   <button type="submit" value="Send" className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-header-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
               </form>
@@ -63,6 +67,7 @@ const ContactForm = () => {
         {/* right daruma */}
         <div className="hidden lg:block absolute right-12 bottom-24">
           <img src="./navbar/daruma.png" alt="" className='h-[12vw] opacity-70 ' />
+        </div>
         </div>
     </div>
   )

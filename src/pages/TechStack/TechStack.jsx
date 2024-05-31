@@ -25,7 +25,7 @@ const TechStack = () => {
   return (
       <div>
         <div>
-          <img className="w-screen h-full z-0 absolute" src="./assets/expertisebg.png" alt="" />
+          <img className="w-screen z-0 fixed" src="./assets/expertisebg.png" alt="" />
         </div>
         <div className="z-10 outerContainer relative">
           {isPhone ? (

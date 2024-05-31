@@ -20,6 +20,7 @@ const ContactForm = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          form.current.reset();
           alert("Message Sent Successfully!^^")
         },
         (error) => {
@@ -31,7 +32,7 @@ const ContactForm = () => {
   return (
     <div>
       <div>
-        <img className="w-screen h-screen z-0 absolute" src="./assets/contactbg.png" alt="" />
+        <img className="w-screen z-0 fixed" src="./assets/contactbg.png" alt="" />
       </div>
       <div className='z-10 text-white flex items-center justify-center relative py-12'>
         {isPhone ? 

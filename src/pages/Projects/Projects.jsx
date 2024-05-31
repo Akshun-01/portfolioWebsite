@@ -5,35 +5,40 @@ import VerticalText from "../../components/ui/VerticalText";
 
 const Projects = () => {
   const isPhone = useMediaQuery({
-    query: "(min-width: 1400px)",
+    query: "(min-width: 1260px)",
   });
 
   return (
-    <div className="bg-background-color bg-[url('./assets/projectbg.png')] bg-cover text-white flex items-center justify-center relative py-12 pt-40">
-      {isPhone ? 
-        <VerticalText heading="Projects" className="absolute hidden"/> : (
-        <div className="">
-          <h1 className="absolute text-4xl top-28 sm:top-24 md:text-5xl lg:top-24 left-1/2 translate-x-[-50%] font-accent tracking-widest opacity-70 ">Project</h1>
+    <div>
+      <div>
+        <img className="w-screen h-screen z-0 absolute" src="./assets/projectbg.png" alt="" />
+      </div>
+      <div className="z-10 text-white flex items-center justify-center relative py-12 pt-40">
+        {isPhone ? 
+          <VerticalText heading="Projects" className="absolute hidden"/> : (
+          <div className="">
+            <h1 className="absolute text-4xl top-28 sm:top-24 md:text-5xl lg:top-24 left-1/2 translate-x-[-50%] font-accent tracking-widest opacity-70 ">Project</h1>
+          </div>
+          )
+        }
+        <div className="hidden xl:block absolute top-1/4 right-12 rotate-6">
+          <img src="./navbar/amulet.png" alt="" className="h-72" />
         </div>
-        )
-      }
-      <div className="hidden xl:block absolute top-1/4 right-12 rotate-6">
-        <img src="./navbar/amulet.png" alt="" className="h-72" />
+        <div className=" w-screen xl:w-[80%] flex flex-wrap items-center justify-center xl:mt-0">
+          {PROJECT_DATA.map(data => {
+                return <ProjectCard data={data} key={data.title}/>
+          })}
+        </div>
+        {/* dividing line */}
+        <div className='w-4/5 h-[1px] absolute bottom-4 translate-x-[-50%] left-1/2 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
       </div>
-      <div className=" w-screen xl:w-[80%] flex flex-wrap items-center justify-center xl:mt-0">
-        {PROJECT_DATA.map(data => {
-              return <ProjectCard data={data} key={data.title}/>
-        })}
-      </div>
-      {/* dividing line */}
-      <div className='w-4/5 h-[1px] absolute bottom-4 translate-x-[-50%] left-1/2 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
     </div>
   )
 }
 
 const ProjectCard = (props) => {
   return (
-    <div className='sm:mx-6 sm:mb-12 mb-[-40px] sm:scale-100 scale-75'>
+    <div className='sm:mx-10 sm:mb-12 mb-[-40px] sm:scale-100 scale-75'>
       <div className="overflow-hidden relative cursor-pointer border-[1px] border-neutral-400 rounded-md">
         <img src={props.data.image} alt={props.data.title} className="w-full h-full" />
         <div className="">

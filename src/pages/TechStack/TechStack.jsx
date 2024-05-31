@@ -23,25 +23,30 @@ const TechStack = () => {
   });
 
   return (
-      <div className="outerContainer relative">
-        {isPhone ? (
-          <VerticalText heading="Tech Stack" className="absolute hidden"/> 
-          ) : (
-          <div className="">
-            <h1 className="absolute text-2xl sm:text-4xl lg:text-5xl top-28 lg:top-24 left-1/2 translate-x-[-50%] font-accent tracking-widest opacity-70 ">Tech Stack</h1>
+      <div>
+        <div>
+          <img className="w-screen h-screen z-0 absolute" src="./assets/expertisebg.png" alt="" />
+        </div>
+        <div className="z-10 outerContainer relative">
+          {isPhone ? (
+            <VerticalText heading="Tech Stack" className="absolute hidden"/> 
+            ) : (
+            <div className="">
+              <h1 className="absolute text-2xl sm:text-4xl lg:text-5xl top-28 lg:top-24 left-1/2 translate-x-[-50%] font-accent tracking-widest opacity-70 ">Tech Stack</h1>
+            </div>
+          )}
+          {/* lantern */}
+          <div className="hidden xl:block fixed top-8 right-12">
+            <img src="./assets/lantern.png" alt="" className="h-72"/>
           </div>
-        )}
-        {/* lantern */}
-        <div className="hidden xl:block fixed top-8 right-12">
-          <img src="./assets/lantern.png" alt="" className="h-72"/>
+          <div className="cards" onMouseMove={mouseHandler}>
+            {CARD_DATA.map((data,i) => {
+              return <Card data={data} key={data.heading} num={i}/>;
+            })}
+          </div>
+          {/* dividing line */}
+          <div className='w-4/5 h-[1px] absolute bottom-5 translate-x-[-50%] left-1/2 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
         </div>
-        <div className="cards" onMouseMove={mouseHandler}>
-          {CARD_DATA.map((data,i) => {
-            return <Card data={data} key={data.heading} num={i}/>;
-          })}
-        </div>
-        {/* dividing line */}
-        <div className='w-4/5 h-[1px] absolute bottom-5 translate-x-[-50%] left-1/2 bg-gradient-to-r from-transparent via-blue-400 opacity-60' />
       </div>
   );
 }

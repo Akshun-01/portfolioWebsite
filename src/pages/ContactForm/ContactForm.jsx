@@ -68,7 +68,7 @@ const ContactForm = () => {
         <div className="hidden lg:block absolute right-12 bottom-24">
           <img src="./navbar/daruma.png" alt="" className='h-[12vw] opacity-70 ' />
         </div>
-        </div>
+      </div>
     </div>
   )
 }

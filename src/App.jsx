@@ -10,7 +10,6 @@ import FloatingNav from "./components/FloatingNav";
 
 function App() {
   const location = useLocation();
-  console.log(location.pathname);
 
   return (
     <div className='bg-background-color'>
@@ -53,7 +52,7 @@ function App() {
         <Route path="/*" element={<Error/>} />
       </Routes>
       </AnimatePresence>
-      {location.pathname=="/" ? <p/> : <Footer />}
+      {(location.pathname=="/projects" || location.pathname== "/techstack" || location.pathname== "/contact") ? <Footer /> : <p/>}
       {/* <FooterNinja /> */}
       {/* <FloatingNav /> */}
     </div>

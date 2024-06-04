@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <div>
       <div>
-        <img className="w-screen z-0 fixed" src="./assets/projectbg.png" alt="" />
+        <img className="w-screen z-0 fixed min-h-screen" src="./assets/projectbg.png" alt="" />
       </div>
       <div className="z-10 text-white flex items-center justify-center relative py-12 pt-40">
         {isPhone ? 

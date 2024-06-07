@@ -1,13 +1,13 @@
 const PROJECT_DATA = [
     {
       image : "./projects/amber.png",
-      links : {github:"https://github.com/Akshun-01/Amber_GSC", website: "website.com"},
+      links : {github:"https://github.com/Akshun-01/Amber_GSC", website: ""},
       tags : ["MERN","Google API", "UI/UX"],
       title : "Amber"
     },
     {
       image : "./projects/flipkartgeni.png",
-      links : {github:"https://github.com/AkhilJ321/flipkart-genai", website: "website2.com"},
+      links : {github:"https://github.com/Akshun-01/flipkart-genai", website: "https://flipkart-genai.vercel.app/"},
       tags : ["Nextjs", "Puppetter", "OpenAI API"],
       title : "GenAI Flipkart"
     },
@@ -25,7 +25,7 @@ const PROJECT_DATA = [
     },
     {
       image : "./projects/portfolio.png",
-      links : {github:"https://github.com/Akshun-01/Portfolio", website: "#"},
+      links : {github:"", website: "https://akshun.netlify.app/"},
       tags : ["React", "Frontend animations", "UI/UX", ],
       title : "Porfolio Website"
     },
